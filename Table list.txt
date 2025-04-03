@@ -1,0 +1,156 @@
+1. Department
+department_id
+department_name
+department_head
+
+2. Department_Heads
+department_head_id
+name
+department_id
+
+
+3. Courses
+course_id
+course_name
+department_id
+
+
+4. Instructors
+instructor_id
+name
+gender
+contact_number
+email
+department_id
+joining_date
+
+
+5. Boys_Hostel
+hostel_id
+hostel_name
+hostel_type (fixed as 'Boys')
+capacity
+available_capacity
+
+6. Girls_Hostel
+hostel_id
+hostel_name
+hostel_type (fixed as 'Girls')
+capacity
+available_capacity
+
+
+7. Hostel_Wardens
+warden_id
+name
+gender
+contact_number
+email
+boys_hostel_id
+girls_hostel_id
+hostel_type
+is_head_warden
+salary
+
+
+8. Students
+student_id
+name
+gender
+dob
+contact_number
+email
+hostler_or_day
+avails_bus
+department_id
+course_id
+hostel_id
+
+
+9. Office_Staff
+staff_id
+name
+position
+contact_number
+email
+department_id
+salary_id
+
+
+10. Salary
+salary_id
+staff_id
+salary_amount
+bonus
+deductions
+net_salary
+salary_date
+
+
+11. Users
+user_id
+username
+password
+role
+student_id
+staff_id
+hostel_id
+
+
+12. Sports
+student_id
+sport_name
+team_position
+
+
+13. Grades
+grade_id
+student_id
+course_id
+grade
+
+
+14. Pass_Requests
+pass_id
+student_id
+pass_type
+start_date
+end_date
+approval_status
+
+
+15. Hostel_Payments
+payment_id
+student_id
+hostel_fee_due
+mess_fee_due
+hostel_fee_paid
+mess_fee_paid
+payment_date
+payment_type
+
+
+16. Day_Scholar_Payments
+payment_id
+student_id
+bus_fee_due
+bus_fee_paid
+payment_date
+payment_type
+
+
+17. Education_Payments
+payment_id
+student_id
+tuition_fee_due
+tuition_fee_paid
+payment_date
+payment_type
+
+
+18. Hostel_Allocations
+allocation_id
+student_id
+hostel_id
+room_number
+allocation_date
